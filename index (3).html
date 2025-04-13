@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GP Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .launch-all {
+            margin-bottom: 40px;
+        }
+        .launch-all button {
+            background-color: #0066cc;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .launch-all button:hover {
+            background-color: #004d99;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 240px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card img {
+            max-width: 100%;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            font-size: 18px;
+            margin: 10px 0 15px;
+        }
+        .card button {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #002f5c;
+        }
+    </style>
+    <script>
+        function launchAll() {
+            const urls = ['battery_ventures.html', 'sequoia_capital.html', 'accel_partners.html', 'index_ventures.html', 'eclipse_capital.html', 'matrix_vc.html'];
+            urls.forEach((url, i) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, i * 400);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>GP Website Launcher Dashboard</h1>
+    <div class="launch-all">
+        <button onclick="launchAll()">🚀 Launch All GPs</button>
+    </div>
+    <div class="grid">
+        
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Battery_Ventures_logo.png" alt="Battery Ventures Logo">
+            <h2>Battery Ventures</h2>
+            <a href="battery_ventures.html" target="_blank">
+                <button>Launch</button>
+            </a>
+        </div>
+    
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Sequoia_Capital_logo.svg" alt="Sequoia Capital Logo">
+            <h2>Sequoia Capital</h2>
+            <a href="sequoia_capital.html" target="_blank">
+                <button>Launch</button>
+            </a>
+        </div>
+    
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Accel_Logo.png" alt="Accel Partners Logo">
+            <h2>Accel Partners</h2>
+            <a href="accel_partners.html" target="_blank">
+                <button>Launch</button>
+            </a>
+        </div>
+    
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Index_ventures_logo.svg" alt="Index Ventures Logo">
+            <h2>Index Ventures</h2>
+            <a href="index_ventures.html" target="_blank">
+                <button>Launch</button>
+            </a>
+        </div>
+    
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Eclipse_Ventures_Logo.svg/512px-Eclipse_Ventures_Logo.svg.png" alt="Eclipse Capital Logo">
+            <h2>Eclipse Capital</h2>
+            <a href="eclipse_capital.html" target="_blank">
+                <button>Launch</button>
+            </a>
+        </div>
+    
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Matrix_Partners_logo.png" alt="Matrix VC Logo">
+            <h2>Matrix VC</h2>
+            <a href="matrix_vc.html" target="_blank">
+                <button>Launch</button>
+            </a>
+        </div>
+    
+    </div>
+</body>
+</html>
