@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sequoia Capital Resources</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+        }
+        h1 { color: #222; margin-bottom: 20px; }
+        ul {
+            list-style: none; padding: 0; margin: 0 auto 30px;
+            max-width: 600px; text-align: left;
+        }
+        ul li { margin: 10px 0; font-size: 16px; }
+        ul li a { text-decoration: none; color: #004080; }
+        ul li a:hover { text-decoration: underline; }
+        button {
+            background-color: #004080; color: white;
+            padding: 16px 32px; font-size: 18px; font-weight: bold;
+            border: none; border-radius: 10px; cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        button:hover { background-color: #002f5c; }
+    </style>
+    <script>
+        function openWebsites() {
+            const urls = ['https://x.com/sequoia', 'https://www.youtube.com/@SequoiaCapital', 'https://www.sequoiacap.com/', 'https://www.crunchbase.com/organization/sequoia-capital/', 'https://www.linkedin.com/company/sequoia-capital/posts/?feedView=all', 'https://www.google.com/search?q=Sequoia+Capital&tbm=nws'];
+            urls.forEach((url, index) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, index * 500);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Sequoia Capital Resource Launcher</h1>
+    <ul>
+        <li>🔗 <a href="https://x.com/sequoia" target="_blank">X (Twitter)</a></li><li>🎥 <a href="https://www.youtube.com/@SequoiaCapital" target="_blank">YouTube</a></li><li>🌐 <a href="https://www.sequoiacap.com/" target="_blank">Official Website</a></li><li>📊 <a href="https://www.crunchbase.com/organization/sequoia-capital/" target="_blank">Crunchbase</a></li><li>💼 <a href="https://www.linkedin.com/company/sequoia-capital/posts/?feedView=all" target="_blank">LinkedIn</a></li><li>📰 <a href="https://www.google.com/search?q=Sequoia+Capital&tbm=nws" target="_blank">Google News</a></li>
+    </ul>
+    <button onclick="openWebsites()">📂 Open All Sequoia Capital Resources</button>
+</body>
+</html>
