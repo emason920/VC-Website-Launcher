@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>GP Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 240px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .card img {
+            width: 100%;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            font-size: 18px;
+            margin: 10px 0 15px;
+        }
+        .card button {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .card:hover button {
+            background-color: #002f5c;
+        }
+    </style>
+    <script>
+        
+        function open_battery_ventures() {
+            const urls = ['https://x.com/BatteryVentures', 'https://www.youtube.com/@BatteryVentures', 'https://www.battery.com/', 'https://www.crunchbase.com/organization/battery-ventures/', 'https://www.linkedin.com/company/battery-ventures/posts/?feedView=all', 'https://www.google.com/search?q=Battery+Ventures&tbm=nws'];
+            urls.forEach((url, i) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, i * 400);
+            });
+        }
+    
+        function open_sequoia_capital() {
+            const urls = ['https://x.com/sequoia', 'https://www.youtube.com/@SequoiaCapital', 'https://www.sequoiacap.com/', 'https://www.crunchbase.com/organization/sequoia-capital/', 'https://www.linkedin.com/company/sequoia/posts/?feedView=all', 'https://www.google.com/search?q=Sequoia+Capital&tbm=nws'];
+            urls.forEach((url, i) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, i * 400);
+            });
+        }
+    
+        function open_accel_partners() {
+            const urls = ['https://x.com/Accel', 'https://www.youtube.com/@AccelVC', 'https://www.accel.com/', 'https://www.crunchbase.com/organization/accel/', 'https://www.linkedin.com/company/accel-vc/posts/?feedView=all', 'https://www.google.com/search?q=Accel+Partners&tbm=nws'];
+            urls.forEach((url, i) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, i * 400);
+            });
+        }
+    
+        function open_index_ventures() {
+            const urls = ['https://x.com/IndexVentures', 'https://www.youtube.com/@indexventures', 'https://www.indexventures.com/', 'https://www.crunchbase.com/organization/index-ventures/', 'https://www.linkedin.com/company/index-ventures/posts/?feedView=all', 'https://www.google.com/search?q=Index+Ventures&tbm=nws'];
+            urls.forEach((url, i) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, i * 400);
+            });
+        }
+    
+        function open_eclipse_capital() {
+            const urls = ['https://www.eclipse.capital/', 'https://www.crunchbase.com/organization/eclipse-ventures/', 'https://www.linkedin.com/company/eclipse-vc/posts/?feedView=all', 'https://www.google.com/search?q=Eclipse+Ventures&tbm=nws'];
+            urls.forEach((url, i) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, i * 400);
+            });
+        }
+    
+        function open_matrix_vc() {
+            const urls = ['https://x.com/matrixvc', 'https://www.linkedin.com/company/matrix-vc/', 'https://matrix.vc/', 'https://www.crunchbase.com/organization/matrix-partners/', 'https://www.google.com/search?q=Matrix+Partners&tbm=nws'];
+            urls.forEach((url, i) => {
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                }, i * 400);
+            });
+        }
+    
+    </script>
+</head>
+<body>
+    <h1>GP Website Launcher Dashboard</h1>
+    <div class="grid">
+        
+        <div class="card" onclick="open_battery_ventures()">
+            <img src="battery_ventures.png" alt="Battery Ventures Logo" />
+            <h2>Battery Ventures</h2>
+            <button>Launch</button>
+        </div>
+    
+        <div class="card" onclick="open_sequoia_capital()">
+            <img src="sequoia_capital.png" alt="Sequoia Capital Logo" />
+            <h2>Sequoia Capital</h2>
+            <button>Launch</button>
+        </div>
+    
+        <div class="card" onclick="open_accel_partners()">
+            <img src="accel_partners.png" alt="Accel Partners Logo" />
+            <h2>Accel Partners</h2>
+            <button>Launch</button>
+        </div>
+    
+        <div class="card" onclick="open_index_ventures()">
+            <img src="index_ventures.png" alt="Index Ventures Logo" />
+            <h2>Index Ventures</h2>
+            <button>Launch</button>
+        </div>
+    
+        <div class="card" onclick="open_eclipse_capital()">
+            <img src="eclipse_capital.png" alt="Eclipse Capital Logo" />
+            <h2>Eclipse Capital</h2>
+            <button>Launch</button>
+        </div>
+    
+        <div class="card" onclick="open_matrix_vc()">
+            <img src="matrix_vc.png" alt="Matrix VC Logo" />
+            <h2>Matrix VC</h2>
+            <button>Launch</button>
+        </div>
+    
+    </div>
+</body>
+</html>
